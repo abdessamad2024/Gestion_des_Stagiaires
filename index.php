@@ -18,7 +18,11 @@
             <li><a class="Links" href="fontend\Modification\Modification.php">Modification</a></li>
             <li><a class="Links" href="fontend\ListeDeStagiaires\ListeDeStagiares.php">Liste de stagiaires</a></li>
             <li class="search__li">    
-              <form class="form__nav" action="/action_page.php" method="POST">
+
+              <form class="form__nav" action="Action.php" method="POST">
+
+    
+
                 <input name="search" type="text" placeholder="Search.." >
                 <button name="submit__Search" type="submit"><i class="fa fa-search"></i></button>
               </form>
@@ -90,5 +94,29 @@
 </section>
 
 <script src="fontend/Ajouter/Ajouter.js"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const img = document.getElementById('img');
+    const navUl = document.getElementById('navbare2__ul');
+    
+    img.addEventListener('click', (e) => {
+      e.stopPropagation(); // Prevent click from bubbling up
+      navUl.style.display = (navUl.style.display === 'block') ? 'none' : 'block';
+    });
+
+    document.addEventListener('click', () => {
+      navUl.style.display = 'none';
+    });
+
+    navUl.addEventListener('click', (e) => {
+      e.stopPropagation(); // Prevent click inside navUl from closing it
+    });
+  });
+</script>
 </body>
 </html>
+
+</body>
+</html>
+

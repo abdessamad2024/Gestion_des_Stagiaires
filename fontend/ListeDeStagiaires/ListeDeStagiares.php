@@ -9,6 +9,22 @@
 </head>
 <body>
     <h1>Liste des stagiaires</h1>
+
+
+    <form action="">
+        <input type="text" placeholder="Search..">
+        <select  name="AET" id="" required>
+            <option value="1">1ere annee</option>
+            <option value="2">2eme annee</option>
+            <option value="3">3eme annee</option>
+        </select>
+        
+        <button>Search</button>
+    </form>
+
+
+
+
     <table class="styled-table">
         <thead>
             <tr>
