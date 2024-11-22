@@ -10,6 +10,7 @@
 <body>
     <h1>Liste des stagiaires</h1>
 
+
     <form action="">
         <input type="text" placeholder="Search..">
         <select  name="AET" id="" required>
@@ -20,6 +21,8 @@
         
         <button>Search</button>
     </form>
+
+
 
 
     <table class="styled-table">

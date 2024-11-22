@@ -18,7 +18,11 @@
             <li><a class="Links" href="fontend\Modification\Modification.php">Modification</a></li>
             <li><a class="Links" href="fontend\ListeDeStagiaires\ListeDeStagiares.php">Liste de stagiaires</a></li>
             <li class="search__li">    
+
               <form class="form__nav" action="Action.php" method="POST">
+
+    
+
                 <input name="search" type="text" placeholder="Search.." >
                 <button name="submit__Search" type="submit"><i class="fa fa-search"></i></button>
               </form>
@@ -90,6 +94,7 @@
 </section>
 
 <script src="fontend/Ajouter/Ajouter.js"></script>
+
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const img = document.getElementById('img');
@@ -111,3 +116,7 @@
 </script>
 </body>
 </html>
+
+</body>
+</html>
+
