@@ -32,9 +32,9 @@ CREATE TABLE `stagiaires` (
   `nomStagiaire` varchar(50) DEFAULT NULL,
   `prenomStagiaire` varchar(40) DEFAULT NULL,
   `filiereStagiaire` varchar(100) DEFAULT NULL,
-  `anneeEtude` date DEFAULT NULL,
+  `anneeEtude` int DEFAULT NULL,
   `typeBac` varchar(100) DEFAULT NULL,
-  `anneeBac` date DEFAULT NULL
+  `anneeBac` varchar(10) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
