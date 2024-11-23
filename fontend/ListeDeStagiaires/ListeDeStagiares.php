@@ -91,51 +91,7 @@ $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </style>
 </head>
 <body>
-<<<<<<< HEAD
-    <h1>Liste des stagiaires</h1>
 
-
-    <form action="">
-        <input type="text" placeholder="Search..">
-        <select  name="AET" id="" required>
-            <option value="1">1ere annee</option>
-            <option value="2">2eme annee</option>
-            <option value="3">3eme annee</option>
-        </select>
-        
-        <button>Search</button>
-    </form>
-
-
-
-
-    <table class="styled-table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Nom</th>
-                <th>Prenom</th>
-                <th>Filiere</th>
-                <th>Annee</th>
-                <th>Type de bac</th>
-                <th>Annee de bac</th>
-            </tr>
-        </thead>
-        <tbody id="tbody">
-            <!-- Sample Data (You can add more rows dynamically) -->
-            <tr>
-                <td>1</td>
-                <td>El Hassnaoui</td>
-                <td>Hamza</td>
-                <td>Informatique</td>
-                <td>2 eme</td>
-                <td>Sciences Physiques</td>
-                <td>2022</td>
-            </tr>
-        </tbody>
-    </table>
-=======
->>>>>>> a36cd0c (HAMZA EL HASSNAOUI THIRD COMMIT)
     
 <section class="svg-container" id="svg-container">
     <svg width="100%" height="200" xmlns="http://www.w3.org/2000/svg">
