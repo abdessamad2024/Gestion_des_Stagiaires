@@ -6,7 +6,7 @@ $search = isset($_POST['search']) ? $_POST['search'] : null;
 
 if ($search !== null) {
     $sql = "SELECT * FROM stagiaires WHERE matStagiaire = :matricule";
-    $stmt = $pdo->prepare($sql);
+    $stmt = $connection->prepare($sql);
     $stmt->execute([':matricule' => $search]);
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
 } else {
