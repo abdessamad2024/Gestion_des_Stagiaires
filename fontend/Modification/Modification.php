@@ -7,7 +7,7 @@ include('../../connexion.php');
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if (isset($_POST['Modifier'])) {
-        
+
         $mat = $_POST['matStagiaire__modifier'];
         $nom = filter_input(INPUT_POST, 'Nom__modifier', FILTER_SANITIZE_SPECIAL_CHARS);
         $prenom = filter_input(INPUT_POST, 'Prenom__modifier', FILTER_SANITIZE_SPECIAL_CHARS);
