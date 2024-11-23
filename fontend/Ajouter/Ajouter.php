@@ -1,13 +1,34 @@
-<<<<<<< HEAD
-=======
 <?php
-
-
+include('../../connexion.php');
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    try {
+        // Use PDO's prepared statement and parameter binding
+        $sql = "INSERT INTO stagiaires (nomStagiaire, prenomStagiaire, filiereStagiaire, anneeEtude, typeBac, anneeBac) 
+                VALUES (:name, :lname, :filiere, :anneeEt, :typebac, :anneeB)";
+        
+        $stmt = $connection->prepare($sql); // Prepare the SQL query
+        
+        // Bind the parameters
+        $stmt->bindParam(':name', $_POST['Nom'], PDO::PARAM_STR);
+        $stmt->bindParam(':lname', $_POST['Prenom'], PDO::PARAM_STR);
+        $stmt->bindParam(':filiere', $_POST['Filiere'], PDO::PARAM_STR);
+        $stmt->bindParam(':anneeEt', $_POST['AET'], PDO::PARAM_STR);
+        $stmt->bindParam(':typebac', $_POST['typeBac'], PDO::PARAM_STR);
+        $stmt->bindParam(':anneeB', $_POST['anneeBac'], PDO::PARAM_INT);
+        
+        // Execute the statement
+        if ($stmt->execute()) {
+            echo "New record created successfully!";
+        } else {
+            echo "Error: Could not execute the query.";
+        }
+    } catch (PDOException $e) {
+        echo "Error: " . $e->getMessage();
+    }
+}
 ?>
 
 
-
->>>>>>> 7b818adac2ed8134a08838be1f13e9cabcf40077
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,4 +120,3 @@
 <script src="./Ajouter.js"></script>
 </body>
 </html>
-
