@@ -1,9 +1,3 @@
-<?php
-
-
-?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,9 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Ajouter.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <style>
+        .back{
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+        .back i{
+            font-size: 30px;
+            color: #333;
+
+        }
+    </style>
 </head>
 <body>
-    <form action="Ajouter.php" method="POST">
+<a class="back" href="/remote02/"><i><i class="fa fa-arrow-left" aria-hidden="true"></i></i></a>
+   
+
+
+<form action="Ajouter.php" method="POST">
         <h1>Ajouter un stagiaire</h1>
 
         <input type="text" placeholder="Nom" name="Nom" required>
