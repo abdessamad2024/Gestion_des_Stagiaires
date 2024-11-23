@@ -59,3 +59,88 @@ h1 {
 .styled-table th {
   text-align: center;
 }
+
+
+    /*! loading animation */
+  
+    .svg-container {
+      position: absolute;
+      z-index: 100;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+    }
+    
+    svg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+    
+    text {
+      font-size: 40px;
+      fill: #333;
+    }
+  
+    .loader {
+      font-size: 180px;
+      position: absolute;
+      z-index: 0;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: transitionTP 1s ease-in-out;  }
+    
+    @keyframes transitionTP {
+      From{
+          opacity: 0;
+          
+      }
+      to {
+          opacity: 1;
+          
+      }
+  }
+    .outer,
+    .middle,
+    .inner {
+      border: 3px solid transparent;
+      border-top-color: #ff0000;
+      border-right-color: #000000;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+    
+    .outer {
+      width: 3.5em;
+      height: 3.5em;
+      margin-left: -1.75em;
+      margin-top: -1.75em;
+      animation: spin 2s linear infinite;
+    }
+    
+    .middle {
+      width: 2.1em;
+      height: 2.1em;
+      margin-left: -1.05em;
+      margin-top: -1.05em;
+      animation: spin 1.75s linear reverse infinite;
+    }
+    
+    .inner {
+      width: 0.8em;
+      height: 0.8em;
+      margin-left: -0.4em;
+      margin-top: -0.4em;
+      animation: spin 1.5s linear infinite;
+    }
+    
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }

@@ -51,7 +51,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <link rel="stylesheet" href="Modification.css">
+
+    <style>
+        .back{
+            position: absolute;
+            top: 15px;
+            left: 15px;
+        }
+        .back i{
+            font-size: 30px;
+            color: #333;
+
+        }
+    </style>
+<body>
+<a class="back" href="/remote02/"><i><i class="fa fa-arrow-left" aria-hidden="true"></i></i></a>
+
+
 
 <body>
     <?php
@@ -60,6 +78,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         unset($_SESSION['success']);
     }
     ?>
+
     <form action="Modification.php" method="POST">
         <h1>Modifier un stagiaire</h1>
 
