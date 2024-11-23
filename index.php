@@ -3,7 +3,7 @@
 // Database Query for the Chart
 try {
     $sql = "SELECT anneeEtude AS year, COUNT(*) AS count FROM stagiaires GROUP BY anneeEtude ORDER BY anneeEtude";
-    $result = $pdo->query($sql);
+    $result = $connexion->query($sql);
 
     $years = [];
     $counts = [];
@@ -38,7 +38,7 @@ try {
 <head>
     <nav class="navbare">
         <ul>
-            <li ><a   href="indix.html"><img   src="fontend\imgs\OFPPT_LOGO.png" alt="OFPPT IMG"> </a></li>
+            <li ><a   href="/remote02/"><img   src="fontend\imgs\OFPPT_LOGO.png" alt="OFPPT IMG"> </a></li>
             <li><a class="Links" href="fontend\Ajouter\Ajouter.php">Ajouter</a></li>
             <li><a class="Links" href="fontend\Modification\Modification.php">Modification</a></li>
             <li><a class="Links" href="fontend\ListeDeStagiaires\ListeDeStagiares.php">Liste de stagiaires</a></li>
