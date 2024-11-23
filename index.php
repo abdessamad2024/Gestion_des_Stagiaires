@@ -42,23 +42,12 @@ try {
             <li><a class="Links" href="fontend\Ajouter\Ajouter.php">Ajouter</a></li>
             <li><a class="Links" href="fontend\Modification\Modification.php">Modification</a></li>
             <li><a class="Links" href="fontend\ListeDeStagiaires\ListeDeStagiares.php">Liste de stagiaires</a></li>
-<<<<<<< HEAD
-            <li class="search__li">    
 
-              <form class="form__nav" action="Action.php" method="POST">
-
-    
-
-                <input name="search" type="text" placeholder="Search.." >
-                <button name="submit__Search" type="submit"><i class="fa fa-search"></i></button>
-              </form>
-=======
               <li class="search__li">    
                 <form class="form__nav" action="fontend\Home\Action.php" method="POST">
                   <input name="search" type="text" placeholder="Enter Matricule" required>
                   <button name="submit__Search" type="submit">Search</button>
                 </form>
->>>>>>> a36cd0c (HAMZA EL HASSNAOUI THIRD COMMIT)
             </li>
           </ul>
     </nav>
@@ -209,10 +198,7 @@ try {
 </body>
 </html>
 
-<<<<<<< HEAD
-</body>
-</html>
-=======
 
->>>>>>> a36cd0c (HAMZA EL HASSNAOUI THIRD COMMIT)
+
+
 
