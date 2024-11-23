@@ -18,7 +18,7 @@ if (!empty($filiere)) {
     $params[':filiere'] = '%' . $filiere . '%';
 }
 
-$stmt = $pdo->prepare($sql);
+$stmt = $connexion->prepare($sql);
 $stmt->execute($params);
 $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
