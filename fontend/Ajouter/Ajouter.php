@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+=======
+<?php
+
+
+?>
+
+
+
+>>>>>>> 7b818adac2ed8134a08838be1f13e9cabcf40077
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,8 +58,8 @@
 
         </button>
 
-        
 
+        
 
     </form>
 
