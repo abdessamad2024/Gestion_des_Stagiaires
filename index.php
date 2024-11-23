@@ -3,7 +3,8 @@
 // Database Query for the Chart
 try {
     $sql = "SELECT anneeEtude AS year, COUNT(*) AS count FROM stagiaires GROUP BY anneeEtude ORDER BY anneeEtude";
-    $result = $pdo->query($sql);
+    $result = $connection->prepare($sql);
+    $result->execute();
 
     $years = [];
     $counts = [];
